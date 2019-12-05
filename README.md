@@ -4,7 +4,7 @@ Boilerplate for starting node.js and typescript servers already with yarn.
 
 ## Installing
 
-`npx degit pedropalhari/node-ts-boilerplate`
+`npx degit pedropalhari/node-ts-boilerplate my-project`
 
 ## Commands
 
