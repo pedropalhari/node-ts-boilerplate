@@ -1,0 +1,11 @@
+{
+  "name": "ts-boilerplate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "dev": "tsc -w"
+  },
+  "license": "MIT",
+  "dependencies": {}
+}
