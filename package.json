@@ -4,8 +4,11 @@
   "main": "index.js",
   "scripts": {
     "start": "node dist/index.js",
-    "dev": "tsc -w"
+    "dev": "tsc -w",
+    "build": "tsc"
   },
   "license": "MIT",
-  "dependencies": {}
+  "dependencies": {
+    "source-map-support": "^0.5.16"
+  }
 }
