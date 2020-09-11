@@ -7,7 +7,8 @@
     "dev": "concurrently --raw \"yarn dev-swc\" \"yarn dev-tsc\"",
     "dev-swc": "swc src/ -d dist --source-maps -w",
     "dev-tsc": "tsc --noEmit -w",
-    "build": "swc src/ -d dist --source-maps"
+    "build": "swc src/ -d dist --source-maps",
+    "typecheck": "tsc --noEmit"
   },
   "license": "MIT",
   "devDependencies": {
