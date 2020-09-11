@@ -1,14 +1,19 @@
 {
   "name": "ts-boilerplate",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "scripts": {
-    "start": "node dist/index.js",
-    "dev": "tsc -w",
-    "build": "tsc"
+    "start": "node --enable-source-maps dist/index.js",
+    "dev": "concurrently --raw \"yarn dev-swc\" \"yarn dev-tsc\"",
+    "dev-swc": "swc src/ -d dist --source-maps -w",
+    "dev-tsc": "tsc --noEmit -w",
+    "build": "swc src/ -d dist --source-maps"
   },
   "license": "MIT",
-  "dependencies": {
-    "source-map-support": "^0.5.16"
+  "devDependencies": {
+    "@swc/cli": "^0.1.26",
+    "@swc/core": "^1.2.24",
+    "chokidar": "^3.4.2",
+    "concurrently": "^5.3.0"
   }
 }
