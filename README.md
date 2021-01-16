@@ -2,6 +2,8 @@
 
 Boilerplate for starting node.js and typescript servers already with yarn.
 
+_Current Node version targeted, v14+._
+
 ## Installing
 
 `npx degit pedropalhari/node-ts-boilerplate my-project`
