@@ -12,5 +12,5 @@ _Current Node version targeted, v14+._
 
 - `yarn start`: runs the `index.ts` file using `tsm` and source maps from Node (using `--enable-source-maps`)
 - `yarn dev`: starts the typescript compiler on watch mode and without emitting any JS files (`tsc -w --noEmit`)
-  - in `tsconfig.json` you can set the properties on `outDir` and `rootDir`
 - `yarn build:js`: builds the code, incrementally
+  - in `tsconfig.json` you can set the properties on `outDir` and `rootDir`
