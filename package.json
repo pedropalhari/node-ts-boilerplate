@@ -3,10 +3,13 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "node --enable-source-maps dist/index.js",
-    "dev": "tsc -w",
-    "build": "tsc"
+    "start": "node -r tsm --enable-source-maps index.ts",
+    "dev": "tsc -w --noEmit",
+    "build:js": "tsc"
   },
   "license": "MIT",
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "tsm": "^2.2.1"
+  }
 }
